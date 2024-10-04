@@ -1,0 +1,48 @@
+{
+    "name": "xchimx/laravel-gimmeproxy",
+    "description": "Laravel package for easy integration with the GimmeProxy API. It allows you to use the GimmeProxy API in your Laravel applications to proxies.",
+    "keywords": [
+        "laravel",
+        "laravel-gimmeproxy",
+        "gimmeproxy",
+        "schottstaedt.net",
+        "Tobias Schottstädt",
+        "proxy",
+        "proxies"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://www.schottstaedt.net",
+    "authors": [
+        {
+            "name": "Tobias Schottstädt",
+            "email": "code@schottstaedt.net",
+            "homepage": "https://www.schottstaedt.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0|^10.0|^11.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xchimx\\GimmeProxy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xchimx\\GimmeProxy\\GimmeProxyServiceProvider"
+            ],
+            "aliases": {
+                "GimmeProxy": "Xchimx\\GimmeProxy\\Facades\\GimmeProxy"
+            }
+        }
+    },
+    "support": {
+        "issues": "https://github.com/xchimx/laravel-gimmeproxy/issues",
+        "source": "https://github.com/xchimx/laravel-gimmeproxy"
+    }
+}
